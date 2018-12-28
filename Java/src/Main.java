@@ -191,6 +191,10 @@ public class Main {
         System.out.println("你的等级是 " + grade);
 
 
+        x = 5;
+        x =  x + 10;
+        System.out.println(x);
+
     }
 
 
