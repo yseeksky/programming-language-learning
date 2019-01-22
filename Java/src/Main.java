@@ -10,44 +10,44 @@ public class Main {
         int b = 20;
         int c = 25;
         int d = 25;
-        System.out.println("a + b = " + (a + b) );
-        System.out.println("a - b = " + (a - b) );
-        System.out.println("a * b = " + (a * b) );
-        System.out.println("b / a = " + (b / a) );
-        System.out.println("b % a = " + (b % a) );
-        System.out.println("c % a = " + (c % a) );
-        System.out.println("a++   = " +  (a++) );
-        System.out.println("a--   = " +  (a--) );
+        System.out.println("a + b = " + (a + b));
+        System.out.println("a - b = " + (a - b));
+        System.out.println("a * b = " + (a * b));
+        System.out.println("b / a = " + (b / a));
+        System.out.println("b % a = " + (b % a));
+        System.out.println("c % a = " + (c % a));
+        System.out.println("a++   = " + (a++));
+        System.out.println("a--   = " + (a--));
         // 查看  d++ 与 ++d 的不同
-        System.out.println("d++   = " +  (d++) );
-        System.out.println("++d   = " +  (++d) );
+        System.out.println("d++   = " + (d++));
+        System.out.println("++d   = " + (++d));
 
 //        自增运算
-         b=++a;
-        System.out.println("b=" +b);
+        b = ++a;
+        System.out.println("b=" + b);
 
-        c=--b;
-        System.out.println("c=" +c);
+        c = --b;
+        System.out.println("c=" + c);
 
 //        前缀自增自减法(++a,--a): 先进行自增或者自减运算，再进行表达式运算。
 //        后缀自增自减法(a++,a--): 先进行表达式运算，再进行自增或者自减运算
-        a=5;
-        b=5;
-        int x = 2*++a;
-        int y = 2*b++;
-        System.out.println("自增运算符前缀运算后a="+a+",x="+x);
-        System.out.println("自增运算符后缀运算后b="+b+",y="+y);
+        a = 5;
+        b = 5;
+        int x = 2 * ++a;
+        int y = 2 * b++;
+        System.out.println("自增运算符前缀运算后a=" + a + ",x=" + x);
+        System.out.println("自增运算符后缀运算后b=" + b + ",y=" + y);
 
 
 //        关系运算符
-        a=10;
-        b=20;
-        System.out.println("a == b = " + (a == b) );
-        System.out.println("a != b = " + (a != b) );
-        System.out.println("a > b = " + (a > b) );
-        System.out.println("a < b = " + (a < b) );
-        System.out.println("b >= a = " + (b >= a) );
-        System.out.println("b <= a = " + (b <= a) );
+        a = 10;
+        b = 20;
+        System.out.println("a == b = " + (a == b));
+        System.out.println("a != b = " + (a != b));
+        System.out.println("a > b = " + (a > b));
+        System.out.println("a < b = " + (a < b));
+        System.out.println("b >= a = " + (b >= a));
+        System.out.println("b <= a = " + (b <= a));
 
 //        位运算符，转换成二进制进行运算
 
@@ -55,25 +55,25 @@ public class Main {
         b = 13; /* 13 = 0000 1101 */
         c = 0;
         c = a & b;       /* 12 = 0000 1100 */
-        System.out.println("a & b = " + c );
+        System.out.println("a & b = " + c);
 
         c = a | b;       /* 61 = 0011 1101 */
-        System.out.println("a | b = " + c );
+        System.out.println("a | b = " + c);
 
         c = a ^ b;       /* 49 = 0011 0001 */
-        System.out.println("a ^ b = " + c );
+        System.out.println("a ^ b = " + c);
 
         c = ~a;          /*-61 = 1100 0011 */
-        System.out.println("~a = " + c );
+        System.out.println("~a = " + c);
 
         c = a << 2;     /* 240 = 1111 0000 */
-        System.out.println("a << 2 = " + c );
+        System.out.println("a << 2 = " + c);
 
         c = a >> 2;     /* 15 = 1111 */
-        System.out.println("a >> 2  = " + c );
+        System.out.println("a >> 2  = " + c);
 
         c = a >>> 2;     /* 15 = 0000 1111 */
-        System.out.println("a >>> 2 = " + c );
+        System.out.println("a >>> 2 = " + c);
 
 
 //        逻辑运算符
@@ -84,9 +84,8 @@ public class Main {
         System.out.println("!(i && k) = " + !(i && k));
 
 //        while 循环
-        int p =10;
-        while (p<20)
-        {
+        int p = 10;
+        while (p < 20) {
             System.out.println("p = " + p);
             p++;
 
@@ -104,61 +103,60 @@ public class Main {
 
         x = 10;
 
-        do{
-            System.out.print("value of x : " + x );
+        do {
+            System.out.print("value of x : " + x);
             x++;
             System.out.print("\n");
-        }while( x < 20 );
+        } while (x < 20);
 
         System.out.println("\n100<100");
 
 //        for 循环
-        for (x = 10;x < 20; x++)
-        {
-            System.out.print("value of x : " + x );
+        for (x = 10; x < 20; x++) {
+            System.out.print("value of x : " + x);
             System.out.print("\n");
         }
 
 
 //        break 语句
-        int [] numbers = {10, 20, 30, 40, 50};
+        int[] numbers = {10, 20, 30, 40, 50};
 
-        for(int v : numbers ) {
+        for (int v : numbers) {
             // v 等于 30 时跳出循环
-            if( v == 30 ) {
+            if (v == 30) {
                 break;
             }
-            System.out.print( v );
+            System.out.print(v);
             System.out.print("\n");
         }
 
 //        continue 语句，当条件==30时，这句不运算，跳过。
-        for(int h : numbers ) {
-            if( h == 30 ) {
+        for (int h : numbers) {
+            if (h == 30) {
                 continue;
             }
-            System.out.print( h );
+            System.out.print(h);
             System.out.print("\n");
         }
 
 //        if 条件语句
         x = 10;
 
-        if( x < 20 ){
+        if (x < 20) {
             System.out.print("这是 if 语句");
         }
 
-        if( x < 20 ){
+        if (x < 20) {
             System.out.print("\n这是 if 语句");
-        }else{
+        } else {
             System.out.print("这是 else 语句");
         }
 
 //        嵌套的 if…else语句
-        x=30;
-        y=10;
-        if( x == 30 ){
-            if( y == 10 ){
+        x = 30;
+        y = 10;
+        if (x == 30) {
+            if (y == 10) {
                 System.out.print("\nX = 30 and Y = 10");
             }
         }
@@ -171,33 +169,72 @@ public class Main {
 
         char grade = 'C';
 
-        switch(grade)
-        {
-            case 'A' :
+        switch (grade) {
+            case 'A':
                 System.out.println("优秀");
                 break;
-            case 'B' :
-            case 'C' :
+            case 'B':
+            case 'C':
                 System.out.println("\n良好");
                 break;
-            case 'D' :
+            case 'D':
                 System.out.println("及格");
-            case 'F' :
+            case 'F':
                 System.out.println("你需要再努力努力");
                 break;
-            default :
+            default:
                 System.out.println("未知等级");
         }
         System.out.println("你的等级是 " + grade);
 
 
         x = 5;
-        x =  x + 10;
+        x = x + 10;
         System.out.println(x);
 
+
+//        三位运算符
+
+
+        int m;
+        m = 5000;
+        int age = m > 10000 ? 20 : 50;
+        System.out.println(age);
+
+//        声明数组变量方法      dataType[] arrayRefVar;   前面是数组类型，后面是变量名称
+        double[] myList;
+
+//        创建数组   Java语言使用new操作符来创建数组    arrayRefVar = new dataType[arraySize];
+        myList = new double[10];
+
+        int[] arrList = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+        System.out.println(arrList[2]);
+        
+
+
+        myList[0] = 5.6;
+        myList[1] = 4.5;
+        myList[2] = 3.3;
+        myList[3] = 13.2;
+        myList[4] = 4.0;
+        myList[5] = 34.33;
+        myList[6] = 34.0;
+        myList[7] = 45.45;
+        myList[8] = 99.993;
+        myList[9] = 11123;
+
+//        计算所有元素的总和
+        double add = 0;
+        for (int l=0; l<myList.length; l++)
+        {
+            add += myList[l];
+
+        }
+        System.out.println("总和为：" +add);
+
+
+
     }
-
-
 }
 
 
